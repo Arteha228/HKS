@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight: Silksong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+  <div class="container header-container">
+    
+    
+    <a href="#" class="logo">
+      <span class="logo-accent">SILKSONG</span> PHARLOOM
+    </a>
+
+    
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#hero" class="nav-link">Головна</a></li>
+        <li class="nav-item"><a href="#locations" class="nav-link">Локації Pharloom</a></li>
+        <li class="nav-item"><a href="#hornet" class="nav-link">Хорнет</a></li>
+        <li class="nav-item"><a href="#arsenal" class="nav-link">Зброя</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="header-bridge">
+      <a href="https://arteha228.github.io/" class="bridge-btn" target="_blank">
+        ◄ До Hallownest (HK)
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+
+<main class="main">
+    <div class="container">
+      <!-- Головна секція (Hero Section) -->
+<section class="hero-section" id="hero">
+    <div class="hero-content">
+        <span class="hero-badge">Офіційний фанатський гайд</span>
+        <h1 class="hero-title">Підніміться на вершину Pharloom</h1>
+        <p class="hero-description">
+            Відкрийте для себе абсолютно нове королівство шовку та пісні. Керуйте Хорнет, боріться з сотнями нових ворогів та розкрийте таємниці занедбаного світу.
+        </p>
+        <div class="hero-buttons">
+            <a href="#locations" class="hero-btn primary-btn">Дослідити локації</a>
+            <a href="#hornet" class="hero-btn secondary-btn">Дізнатися про Хорнет</a>
+        </div>
+    </div>
+</section>
+        <section class="locations-section" id="locations">
+            <h2 class="section-title">Королівство Pharloom</h2>
+            <p class="section-subtitle">Досліджуй величний та небезпечний світ Silksong. Натисни на картку, щоб дізнатися більше.</p>
+
+            <div class="locations-grid">
+                
+                <!-- Картка 1: Moss Grotto -->
+                <article class="location-card" onclick="toggleDetails(this)">
+                    <div class="card-image-wrapper">
+                        <img src="Grotto.werb.webp" alt="Moss Grotto" class="card-img">
+                    </div>
+                    <div class="card-main-content">
+                        <h3>Moss Grotto</h3>
+                        <p class="card-short-desc">Початок подорожі Хорнет у зелених печерах.</p>
+                    </div>
+                    <div class="card-extra-info">
+                        <p><strong>Особливості:</strong> Зарослі печери, наповнені мохом та таємничими істотами.</p>
+                        <p><strong>Небезпека:</strong> Початкові вороги та пастки з колючками.</p>
+                    </div>
+                </article>
+
+                <!-- Картка 2: Deep Docks -->
+                <article class="location-card" onclick="toggleDetails(this)">
+                    <div class="card-image-wrapper">
+                        <img src="Deep_Docks_Map_Clean.png" alt="Deep Docks" class="card-img">
+                    </div>
+                    <div class="card-main-content">
+                        <h3>Deep Docks</h3>
+                        <p class="card-short-desc">Підземні доки, охоплені гарячим полум'ям.</p>
+                    </div>
+                    <div class="card-extra-info">
+                        <p><strong>Особливості:</strong> Розпечене залізо, лавові потоки та механічні робітники.</p>
+                        <p><strong>Небезпека:</strong> Висока температура та агресивні вороги-механізми.</p>
+                    </div>
+                </article>
+
+                <!-- Картка 3: Greymoor -->
+                <article class="location-card" onclick="toggleDetails(this)">
+                    <div class="card-image-wrapper">
+                        <img src="Greymoor.jpeg" alt="Greymoor" class="card-img">
+                    </div>
+                    <div class="card-main-content">
+                        <h3>Greymoor</h3>
+                        <p class="card-short-desc">Величезні туманні рівнини та старовинні вежі.</p>
+                    </div>
+                    <div class="card-extra-info">
+                        <p><strong>Особливості:</strong> Вічна осінь, відкриті простори та похмурі руїни.</p>
+                        <p><strong>Небезпека:</strong> Блукаючі монстри та складний рельєф для акробатики.</p>
+                    </div>
+                </article>
+
+                <!-- Картка 4: The Citadel -->
+                <article class="location-card" onclick="toggleDetails(this)">
+                    <div class="card-image-wrapper">
+                        <img src="Citadel_Navmap.webp" alt="The Citadel" class="card-img">
+                    </div>
+                    <div class="card-main-content">
+                        <h3>The Citadel</h3>
+                        <p class="card-short-desc">Золота вершина Pharloom.</p>
+                    </div>
+                    <div class="card-extra-info">
+                        <p><strong>Особливості:</strong> Велична цитадель, де зберігаються таємниці шовку і пісні.</p>
+                        <p><strong>Небезпека:</strong> Найсильніші елітні вартові та пастки королівського рівня.</p>
+                    </div>
+                </article>
+
+                <!-- Картка 5: Karak Sands -->
+<article class="location-card" onclick="toggleDetails(this)">
+    <div class="card-image-wrapper">
+        <img src="sands of karak.webp" alt="Karak Sands" class="card-img">
+    </div>
+    <div class="card-main-content">
+        <h3>Karak Sands</h3>
+        <p class="card-short-desc">Безкрайні піщані дюни та старовинні руїни.</p>
+    </div>
+    <div class="card-extra-info">
+        <p><strong>Особливості:</strong> Золотисті пустельні краєвиди, заховані механізми та давні поховання.</p>
+        <p><strong>Небезпека:</strong> Піщані бурі, підземні хижаки та хиткі піски.</p>
+    </div>
+</article>
+
+                   <!-- Картка 6: The Sinking Wastes -->
+<article class="location-card" onclick="toggleDetails(this)">
+    <div class="card-image-wrapper">
+        <img src="image_stok.webp" alt="The Sinking Wastes" class="card-img">
+    </div>
+    <div class="card-main-content">
+        <h3>The Sinking Wastes</h3>
+        <p class="card-short-desc">Затоплені болота та в'язкі брудні рівнини.</p>
+    </div>
+    <div class="card-extra-info">
+        <p><strong>Особливості:</strong> Топкі брудні води, напівзанурені руїни та отруйна флора.</p>
+        <p><strong>Небезпека:</strong> Повільне пересування в бруді, небезпечні амфібії та токсичні пари.</p>
+    </div>
+</article>
+
+                <!-- Картка 7: The Marrow (Нова) -->
+                <article class="location-card" onclick="toggleDetails(this)">
+                    <div class="card-image-wrapper">
+                        <img src="Giant_dirtcarver_fasttravel.webp" alt="The Marrow" class="card-img">
+                    </div>
+                    <div class="card-main-content">
+                        <h3>The Marrow</h3>
+                        <p class="card-short-desc">Вузькі печерні тунелі глибоко під землею.</p>
+                    </div>
+                    <div class="card-extra-info">
+                        <p><strong>Особливості:</strong> Тісні коридори, що з'єднують різні частини королівства.</p>
+                        <p><strong>Небезпека:</strong> Раптові засідки диких істот та обмежений простір для маневру.</p>
+                    </div>
+                </article>
+
+                <!-- Картка 8: The Abyss / Бездна (Нова) -->
+                <article class="location-card" onclick="toggleDetails(this)">
+                    <div class="card-image-wrapper">
+                        <img src="3F3F3F_SS.webp" alt="The Abyss" class="card-img">
+                    </div>
+                    <div class="card-main-content">
+                        <h3>The Abyss</h3>
+                        <p class="card-short-desc">Найтемніше і найдавніше місце на дні світу.</p>
+                    </div>
+                    <div class="card-extra-info">
+                        <p><strong>Особливості:</strong> Вічна темрява, стародавні секрети та джерело порожнечі.</p>
+                        <p><strong>Небезпека:</strong> Повна відсутність світла, незбагненні жахи та смертельні падіння.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!-- Секція про Хорнет -->
+<section class="hornet-section" id="hornet">
+    <h2 class="section-title">Хорнет — Захисниця Pharloom</h2>
+    <p class="section-subtitle">Принцеса-захисник Галловнеста, яка потрапила у полон до незнайомого світу.</p>
+
+    <div class="hornet-card">
+        <div class="hornet-image-wrapper">
+            <img src="Hornet_Idle.webp" alt="Hornet" class="hornet-img">
+        </div>
+        <div class="hornet-info">
+            <h3>Хто така Хорнет?</h3>
+            <p>
+                Хорнет — швидка, граціозна та смертоносна воїнка, яка володіє голкою та нитками шовку. На відміну від Лицаря з першої частини, вона вміє розмовляти, має власний характер та створює різноманітні інструменти прямо під час бою.
+            </p>
+            
+            <div class="hornet-stats">
+                <div class="stat-item">
+                    <span class="stat-title">Зброя:</span>
+                    <span class="stat-value">Голка та шовкові нитки</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-title">Стиль бою:</span>
+                    <span class="stat-value">Акробатичний та високошвидкісний</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-title">Особливість:</span>
+                    <span class="stat-value">Крафтинг інструментів у бою</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секція зброї та інструментів -->
+<section class="arsenal-section" id="arsenal">
+    <h2 class="section-title">Арсенал та Шовк</h2>
+    <p class="section-subtitle">Смертоносні інструменти, пастки та голки, які Хорнет створює під час бою.</p>
+
+    <div class="arsenal-grid">
+        
+        <!-- Інструмент 1 -->
+        <article class="arsenal-card">
+            <div class="arsenal-img-wrapper">
+                <img src="Игла_из_светлой_стали.webp" alt="Голка Хорнет" class="arsenal-img">
+            </div>
+            <div class="arsenal-content">
+                <h3>Голка (Needle)</h3>
+                <p>Основна зброя Хорнет. Довга, гостра і надзвичайно міцна, вона використовується як для швидких ударів, так і для акробатичних стрибків.</p>
+            </div>
+        </article>
+
+        <!-- Інструмент 2 -->
+        <article class="arsenal-card">
+            <div class="arsenal-img-wrapper">
+                <img src="katyshka.webp" alt="Шовкова котушка" class="arsenal-img">
+            </div>
+            <div class="arsenal-content">
+                <h3>Шовкова нитка</h3>
+                <p>Дозволяє Хорнет миттєво лікуватися, виконувати потужні атаки шовком та взаємодіяти з навколишнім середовищем.</p>
+            </div>
+        </article>
+
+        <!-- Інструмент 3 -->
+        <article class="arsenal-card">
+            <div class="arsenal-img-wrapper">
+                <img src="ockoloc.webp" alt="Пастки та шипи" class="arsenal-img">
+            </div>
+            <div class="arsenal-content">
+                <h3>Пастки та шипи</h3>
+                <p>Метальні інструменти та бомби-пастки, які Хорнет розкидає на арені, щоб стримувати натовпи ворогів.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+    </div>
+</main>
+
+
+
+<footer class="footer">
+  <p>© 2025 Hollow knight: Silcsong</p>
+     
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
