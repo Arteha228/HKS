@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12090d; 
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* Контейнер для центрування */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка сайту (Header) */
+.header {
+    background: linear-gradient(135deg, #1b0d13 0%, #0d0508 100%);
+    border-bottom: 2px solid #8b2626; 
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип */
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.85;
+}
+
+.logo-accent {
+    color: #ff5252; 
+    text-shadow: 0 0 10px rgba(255, 82, 82, 0.4); 
+}
+
+/* Навігаційне меню */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #d1ccc0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff5252;
+}
+
+/* Кнопка-перехідник на першу частину (HK1) */
+.bridge-btn {
+    color: #ffda79;
+    border: 1px solid #ffda79;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.bridge-btn:hover {
+    background-color: #ffda79;
+    color: #12090d;
+    box-shadow: 0 0 10px rgba(255, 218, 121, 0.5);
+}
+
+/* Головний контент та секція локацій */
+.main {
+    padding: 50px 0;
+}
+
+/* Головна секція (Hero Section) */
+.hero-section {
+    padding: 60px 20px;
+    margin-bottom: 60px;
+    background: radial-gradient(circle at center, rgba(139, 38, 38, 0.15) 0%, rgba(18, 9, 13, 0) 70%),
+                linear-gradient(145deg, #1b0d13 0%, #0d0508 100%);
+    border: 1px solid #8b2626;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(255, 82, 82, 0.15);
+    color: #ff5252;
+    border: 1px solid rgba(255, 82, 82, 0.4);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(255, 218, 121, 0.2);
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    color: #d1ccc0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Кнопки у Hero секції */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #ff5252;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 82, 82, 0.4);
+}
+
+.primary-btn:hover {
+    background-color: #ff3333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 82, 82, 0.6);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #ffda79;
+    border: 1px solid #ffda79;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255, 218, 121, 0.1);
+    transform: translateY(-2px);
+}
+
+.section-title {
+    font-size: 32px;
+    color: #ffda79;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    color: #a09995;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Зовнішній вигляд картки */
+.location-card {
+    background: linear-gradient(145deg, #1b0d13 0%, #12090d 100%);
+    border: 1px solid #8b2626;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 38, 38, 0.4);
+    border-color: #ff5252;
+}
+
+
+.card-image-wrapper {
+    width: 100%;
+    height: 140px;
+    background-color: #070204;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.4s ease;
+}
+
+.location-card:hover .card-img {
+    transform: scale(1.08);
+}
+
+/* Контент картки */
+.card-main-content {
+    padding: 15px 20px;
+}
+
+.location-card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.card-short-desc {
+    color: #d1ccc0;
+    font-size: 13px;
+}
+
+
+.card-extra-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease, border-top 0.4s ease;
+    background-color: rgba(13, 5, 8, 0.9);
+    font-size: 13px;
+    color: #d1ccc0;
+    padding: 0 20px;
+}
+
+.location-card.active .card-extra-info {
+    max-height: 150px;
+    padding: 12px 20px;
+    border-top: 1px solid rgba(139, 38, 38, 0.5);
+}
+
+/* Секція про Хорнет */
+.hornet-section {
+    margin-top: 70px;
+}
+
+.hornet-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(145deg, #1b0d13 0%, #12090d 100%);
+    border: 1px solid #8b2626;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.card-image-wrapper {
+    width: 100%;
+    height: 140px;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hornet-image-wrapper {
+    flex: 1 1 300px;
+    height: 320px; 
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.hornet-card:hover .hornet-img {
+    transform: scale(1.05);
+}
+
+.hornet-info {
+    flex: 1 1 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.hornet-info h3 {
+    color: #ffda79;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.hornet-info p {
+    color: #d1ccc0;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Блок характеристик */
+.hornet-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(139, 38, 38, 0.4);
+    padding-top: 15px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    background: rgba(13, 5, 8, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid #ff5252;
+}
+
+.stat-title {
+    color: #a09995;
+    font-weight: 500;
+}
+
+.stat-value {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Секція зброї та арсеналу */
+.arsenal-section {
+    margin-top: 70px;
+}
+
+.arsenal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.arsenal-card {
+    background: linear-gradient(145deg, #1b0d13 0%, #12090d 100%);
+    border: 1px solid #8b2626;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.arsenal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 38, 38, 0.4);
+    border-color: #ffda79;
+}
+
+.arsenal-img-wrapper {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.arsenal-img {
+    width: auto; 
+    height: 100%; 
+    max-width: 100%;
+    object-fit: contain; 
+    transition: transform 0.4s ease;
+}
+
+.arsenal-card:hover .arsenal-img {
+    transform: scale(1.08);
+}
+
+.arsenal-content {
+    padding: 15px 20px;
+}
+
+.arsenal-content h3 {
+    color: #ffda79;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.arsenal-content p {
+    color: #d1ccc0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Футер сайту */
+.footer {
+    background: linear-gradient(135deg, #0d0508 0%, #1b0d13 100%);
+    border-top: 2px solid #8b2626;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer p {
+    color: #a09995;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
